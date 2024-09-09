@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak kumar singh</title>
+    <link rel="stylesheet" href="second.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="name">
+                <p>Deepak Kumar Singh</p>
+            </div>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#home"><div class="about">About</div></a>
+                <a href="#Skill"><div class="skills">skills</div></a>
+                <a href="#Project"><div class="Projects">Projects</div></a>
+                <a href="#Contact"><div class="Contact">Contact</div></a>
+                <a href=""><div class="resume">Resume</div></a>
+            </div>
+        </div>
+    </header>
+    <section id="About">
+        <div class="pic"><img src="mypic.png" alt="">
+            <script>
+                window.onload = function() {
+                  document.querySelector('.pic').classList.add('translated');
+                  document.querySelector('.name2').classList.add('moveup');
+                  document.querySelector('.desc').classList.add('moveup');
+                };
+            </script></div>
+        <div class="name2"><p>Deepak Kumar Singh</p></div>
+        <div class="desc"><p>Computer Science and Engineering Student -BTech</p></div>
+    </section>
+
+    <section id="home">
+        <div class="home">
+            <div class="image">
+                <img src="myimg1.png" alt="">
+                <div class="visit">
+                    <a href="https://github.com/itsdeepak06" ><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/deepak_au_001?igsh=OXF3MW0wdWpvbnVl" ><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/deepakkrsi20746?t=9RZPOCnBxpXR8et-6-YTLg&s=08s" ><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="detail">
+                <div class="name3"><p>Deepak Kumar Singh</p></div>
+                <div class="college"><p>Institute of Engineering and Technology | Agra, India </p></div>
+                <div class="interest">
+                    <p>I'm a Bachelor student Class of 2021 and my passion is Computer Science. <br>
+                        My interests include software design and development, artificial intelligence, machine learning, <br>computer vision, and natural language processing.</p>
+                    <p>I'm currently a 4rth year  student working towards my Bachelor of Engineering degree in Computer Science/Artificial Intelligence.</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const section = document.querySelector('.home');
+            
+                // Use IntersectionObserver to observe when the section enters the viewport
+                const observer = new IntersectionObserver((entries) => {
+                  entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                      section.classList.add('active'); // Add 'active' when section comes into view
+                    } else {
+                      section.classList.remove('active'); // Remove 'active' when section leaves view
+                    }
+                  });
+                }, { threshold: 0 }); // Trigger when 50% of the section is visible
+            
+                observer.observe(section);
+              });
+        </script>
+    </section>
+
+    <section id="Skill">
+        <div class="frame">
+            <div class="topic">
+                <h1>Skills</h1>
+                <p>[Below are some of my skills, and I'm always looking to learn more.]</p>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-robot"></i></div>
+                    <div class="detail-topic"><p>Machine Learning</p></div>
+                    <div class="skill-detail">Currently I'm learning "Machine Learning" using Python and Artificial Intelligence Techniques</div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-microchip"></i></div>
+                    <div class="detail-topic"><p>Artificial Intelligence</p></div>
+                    <div class="skill-detail">I have significantly learned the ethics of Artificial Intelligence and the Techniques of the Natural Language processing</div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-brands fa-python"></i></div>
+                    <div class="detail-topic"><p>Python</p></div>
+                    <div class="skill-detail">I have Learned Python Language extensively. I have done many Personal projects in python including Libraries.</div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-database"></i></div>
+                    <div class="detail-topic"><p>Databases</p></div>
+                    <div class="skill-detail">I have learned about the Database management System using MySQL And NoSQL Technology for a better backend projects </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-code"></i></div>
+                    <div class="detail-topic"><p>HTML/CSS/Javascript</p></div>
+                    <div class="skill-detail">I have learned About the Web Development Using Html/CSS/Javascript and use of node.js and Bootstrap. <br> I have done many Projects using web development.</div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-c"></i></div>
+                    <div class="detail-topic"><p>C language</p></div>
+                    <div class="skill-detail">I have learned C language in my first coding experience and this quit interesting and root based programming Language.</div>
+                </div>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const section = document.querySelector('.boxes');
+                    
+                        // Use IntersectionObserver to observe when the section enters the viewport
+                        const observer = new IntersectionObserver((entries) => {
+                          entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                              section.classList.add('active'); // Add 'active' when section comes into view
+                            } else {
+                              section.classList.remove('active'); // Remove 'active' when section leaves view
+                            }
+                          });
+                        }, { threshold: 0.7 }); // Trigger when 50% of the section is visible
+                    
+                        observer.observe(section);
+                      });
+                </script>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="Project">
+        <div class="frame2">
+            <div class="topic">
+                <h1>My Projects</h1>
+                <p>[Here you can see some of the projects I've done on my own time.]</p>
+            </div>
+            <div class="container">
+                <a href="" class="box2" style="background-image: url('age.png');">
+                    <div class="project-detail">
+                        <div class="detail2">
+                            <p>Age Detection</p>
+                            <p>A Simple Age Detection Program that detect age of the the person using camera </p>
+                        </div>
+                        <div class="item-used">
+                            <p>Python</p>
+                            <p>OpenCV</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="box2" style="background-image: url('language.png');">
+                    <div class="project-detail">
+                        <div class="detail2">
+                            <p>Language Learning Assitent</p>
+                            <p>A python based Language learning Assistant used as lerning of english language</p>
+                        </div>
+                        <div class="item-used">
+                            <p>Python</p>
+                            <p>Speech Recognition</p>
+                            <p></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="box2" style="background-image: url('color.webp');">
+                    <div class="project-detail">
+                        <div class="detail2">
+                            <p>Color Detection</p>
+                            <p>A simple GUI based color Detection that detect the color using Camera</p>
+                        </div>
+                        <div class="item-used">
+                            <p>Python</p>
+                            <p>OpenCV</p>
+                            <p></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://itsdeepak06.github.io/let-s-go/" class="box2"  style="background-image: url('tour.png');  ">
+                    <div class="project-detail">
+                        <div class="detail2">
+                            <p>Tourism Website</p>
+                            <p>A simple Tourism website. Where people can visit and finalise there destination and estimate there expenditure</p>
+                        </div>
+                        <div class="item-used">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>Javascript</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="Contact">
+        <div class="frame">
+            <div class="topic">
+                <h1>Contact Me</h1>
+                <div class="email">
+                    <div class="icon2"><i class="fa-solid fa-envelope"></i></div>
+                    <a href="mailto:dksap100p@gmail.com"> dksap1000@gmail.com </a>
+                </div>
+                <div class="phone">
+                    <div class="icon2"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    <p>Phone : 7880414295</p>
+                </div>
+            </div>
+            <div class="form" id="form">
+                <div class="form-container">
+                    <div class="left">
+                        <input type="text" id="name" placeholder="Your Name">
+                        <input type="email" id="email" placeholder="Your Email">
+                        <input type="tel" id="phone" placeholder="Your Phone">
+                    </div>
+                    <div class="right">
+                        <textarea class="right-input" id="message" placeholder="Your Message..."></textarea>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- Popup -->
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <p id="popupMessage"></p>
+                    <div id="tickMark" style="display: none;">✔️</div>
+                </div>
+            </div>
+            <div class="button">
+                <button type="button" id="sendBtn">Send</button>
+            </div>
+        </div>
+        
+
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Deepak Kumar Singh. All rights reserved.</p>
+            <div class="social-media">
+                <a href="https://wa.me/7880414295"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/deepakkrsi20746?t=9RZPOCnBxpXR8et-6-YTLg&s=08s" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/deepak_au_001?igsh=OXF3MW0wdWpvbnVl" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/deepak-kumar-singh-0142a5232/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <nav class="footer-nav">
+                <a href="#About">Home</a> |
+                <a href="#home">About</a> |
+                <a href="#Skill">Skills</a> |
+                <a href="#Project">Projects</a> |
+                <a href="#Contact">Contact</a>
+            </nav>
+        </div>
+    </footer>
+    <script src="hamburger.js"></script>
+    <script src="second.js"></script>
+</body>
+</html>
