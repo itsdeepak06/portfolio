@@ -66,17 +66,15 @@
         <script>
             document.addEventListener("DOMContentLoaded", function() {
                 const section = document.querySelector('.home');
-            
-                // Use IntersectionObserver to observe when the section enters the viewport
                 const observer = new IntersectionObserver((entries) => {
                   entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                      section.classList.add('active'); // Add 'active' when section comes into view
+                      section.classList.add('active');
                     } else {
-                      section.classList.remove('active'); // Remove 'active' when section leaves view
+                      section.classList.remove('active');
                     }
                   });
-                }, { threshold: 0 }); // Trigger when 50% of the section is visible
+                }, { threshold: 0 });
             
                 observer.observe(section);
               });
